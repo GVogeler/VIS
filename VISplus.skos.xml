@@ -7,15 +7,7 @@
    xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
    xmlns:html="http://www.w3.org/TR/REC-html40">
    <!-- 
-   TOC: bei den Konzepten zu den Kapiteln würden eigentlich noch narrower hineingehören? und auch broader bei den unterkapiteln.... oder?
-   bei französischen Ausdrücken in bestimmten Fällen bei "ou" auftrennen in prefLabel und altLabel?
-   Konzept 11 ist noch problematisch
-   manchmal leeres Überkonzept, nur a und b Spezifizierung
-   TOC: bei den einzelnen Konzepten steht dann auch sowas:
-      <skos:broader rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#TOC_IX"/>
-      <skos:broader rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#TOC_IX_A"/>
-      <skos:broader rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#TOC_IX_A_2"/>
-    da gehört dann eigentlich nur das letzte hin, oder?
+      This document  is the living document adding new concepts, creating new definitions, changing hierarchy etc.
    -->
    <skos:ConceptSchema rdf:about="http://gams.uni-graz.at/skos/scheme/o:vis">
       <dc:title xml:lang="deu">Siegelvokabular</dc:title>
