@@ -6,7 +6,7 @@
     <dc:identifier rdf:resource="http://gams.uni-graz.at/o:vis"></dc:identifier>
     <dc:publisher>Zentrum für Informationsmodellierung, Karl-Franzens-Universität
          Graz</dc:publisher>
-    <dc:date>2017-10-20</dc:date>
+    <dc:date>2017-10-20, update 2021-11-11</dc:date>
     <dc:description xml:lang="en">Multilingual terminology extracted from &quot;Conseil International des Archives - Comité
          de Sigillographie: Vocabulaire Internationale de la Sigillographie, Roma 1990 (Ministero
          per i Beni Culturali e Ambientali, Pubblicazioni degli Archivi di Stato, Sussidi
@@ -326,7 +326,7 @@
     <skos:prefLabel xml:lang="de">Gerichtssiegel</skos:prefLabel>
     <skos:prefLabel xml:lang="es">Precintos</skos:prefLabel>
     <skos:inScheme rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/"></skos:inScheme>
-    <skos:broader rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#TOC_II"></skos:broader>
+    <skos:broader rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#TOC_III"></skos:broader>
   </skos:Concept>
   <skos:Concept rdf:about="http://gams.uni-graz.at/skos/scheme/o:vis/#16">
     <skos:inScheme rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/"></skos:inScheme>
