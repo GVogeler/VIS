@@ -12,13 +12,18 @@
     <dc:identifier rdf:resource="http://gams.uni-graz.at/o:vis"/>
     <dc:publisher>Zentrum für Informationsmodellierung, Karl-Franzens-Universität
       Graz</dc:publisher>
-    <dc:date>2017-10-20</dc:date>
+    <dc:date>2022-02-21</dc:date>
     <dc:description xml:lang="en">Multilingual terminology extracted from "Conseil International des
       Archives - Comité de Sigillographie: Vocabulaire Internationale de la Sigillographie, Roma
       1990 (Ministero per i Beni Culturali e Ambientali, Pubblicazioni degli Archivi di Stato,
       Sussidi 3)", which is online at
       http://www.archivi.beniculturali.it/dga/uploads/documents/Sussidi/Sussidi_3_A.pdf. Please
-      refer to this for the definitions of the terms and for further translations.</dc:description>
+      refer to this for further translations.</dc:description>
+    <dc:creator>Conseil International des Archives - Comité de Sigillographie</dc:creator>
+    <dc:contributor>Robert-Henri Bautier</dc:contributor>
+    <dc:contributor>Stefania Ricci Noè</dc:contributor>
+    <dc:contributor>Sabrina Strutz</dc:contributor>
+    <dc:contributor>Georg Vogeler</dc:contributor>
     <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#TOC_I"/>
     <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#TOC_II"/>
     <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#TOC_III"/>
