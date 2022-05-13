@@ -18,7 +18,7 @@
       <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/o:vis#TOC_VII"/>
       <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/o:vis#TOC_VIII"/>
       <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/o:vis#TOC_IX"/>
-      <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/o:vis#TOC_"/>
+      <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/o:vis#TOC_A"/>
       <!--<skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/o:vis#nummer"/>
       <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/o:vis#nummer"/>-->
       <dc:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
@@ -132,10 +132,10 @@
       <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_IX"/>
       <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
    <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#TOC_IX_C"/></skos:Concept>
-   <skos:Concept rdf:about="http://gams.uni-graz.at/o:vis#TOC_">
+   <skos:Concept rdf:about="http://gams.uni-graz.at/o:vis#TOC_A">
       <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
-      <skos:prefLabel xml:lang="fr"/>
-   <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#TOC_"/></skos:Concept>
+      <skos:prefLabel xml:lang="fr">Appendix</skos:prefLabel>
+   <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#TOC_A"/></skos:Concept>
    <skos:concept rdf:about="http://gams.uni-graz.at/o:vis#1">
       <skos:prefLabel xml:lang="fr">sigillographie</skos:prefLabel>
       <skos:prefLabel xml:lang="fr">sphragistique</skos:prefLabel>
@@ -3870,7 +3870,7 @@
       <skos:prefLabel xml:lang="es">Sello inédito</skos:prefLabel>
       <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#319"/>
    <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#319b"/></skos:Concept>
-   <!-- ab hier TOC??? -->
+   <!-- ab hier Appendix -->
    <skos:concept rdf:about="http://gams.uni-graz.at/o:vis#320">
       <skos:prefLabel xml:lang="fr">garde du scel</skos:prefLabel>
       <skos:prefLabel xml:lang="fr">garde des sceaux</skos:prefLabel>
@@ -3879,14 +3879,14 @@
       <skos:altLabel xml:lang="en">dans la chancellerie royale: Lord Chancellor</skos:altLabel>
       <skos:prefLabel xml:lang="es">Chanciller del sello</skos:prefLabel>
       <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
-      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_"/>
+      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_I"/>
    </skos:concept>
    <skos:concept rdf:about="http://gams.uni-graz.at/o:vis#321">
       <skos:prefLabel xml:lang="fr">audience du sceau</skos:prefLabel>
       <skos:altLabel xml:lang="fr">l'Audience</skos:altLabel>
       <skos:altLabel xml:lang="fr">Sceau</skos:altLabel>
       <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
-      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_"/>
+      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_I"/>
    </skos:concept>
    <skos:concept rdf:about="http://gams.uni-graz.at/o:vis#322">
       <skos:prefLabel xml:lang="fr">émolument du sceau</skos:prefLabel>
@@ -3895,11 +3895,11 @@
       <skos:prefLabel xml:lang="en">Sealing fees</skos:prefLabel>
       <skos:prefLabel xml:lang="es">Tasa (ou derechos) del sello</skos:prefLabel>
       <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
-      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_"/>
+      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_III"/>
    </skos:concept>
    <skos:concept rdf:about="http://gams.uni-graz.at/o:vis#323">
       <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
-      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_"/>
+      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_I"/>
       <skos:narrower rdf:resource="http://gams.uni-graz.at/o:vis#323a"/>
       <skos:narrower rdf:resource="http://gams.uni-graz.at/o:vis#323b"/>
    </skos:concept>
@@ -3917,7 +3917,7 @@
    <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#323b"/></skos:Concept>
    <skos:concept rdf:about="http://gams.uni-graz.at/o:vis#324">
       <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
-      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_"/>
+      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_I"/>
       <skos:narrower rdf:resource="http://gams.uni-graz.at/o:vis#324a"/>
       <skos:narrower rdf:resource="http://gams.uni-graz.at/o:vis#324b"/>
       <skos:narrower rdf:resource="http://gams.uni-graz.at/o:vis#324c"/>
