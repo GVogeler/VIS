@@ -23,8 +23,13 @@
     <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/o:vis#TOC_VII"/>
     <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/o:vis#TOC_VIII"/>
     <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/o:vis#TOC_IX"/>
+    <skos:hasTopConcept rdf:resource="http://gams.uni-graz.at/o:vis#TOC_A"/>
     <dc:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </skos:ConceptScheme>
+    <skos:Concept rdf:abpit="http://gams.uni-graz.at/o:vis#TOC_A">
+        <skos:prefLabel xml:lang="fr">Appendix</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
+    </skos:Concept>
   <skos:Concept rdf:about="http://gams.uni-graz.at/o:vis#TOC_I">
     <skos:prefLabel xml:lang="fr">GÉNÉRALITÉS</skos:prefLabel>
     <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
