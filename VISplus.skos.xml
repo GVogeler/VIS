@@ -3880,6 +3880,7 @@
       <skos:prefLabel xml:lang="es">Chanciller del sello</skos:prefLabel>
       <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
       <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_I"/>
+      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_A"/>
    </skos:concept>
    <skos:concept rdf:about="http://gams.uni-graz.at/o:vis#321">
       <skos:prefLabel xml:lang="fr">audience du sceau</skos:prefLabel>
@@ -3887,6 +3888,7 @@
       <skos:altLabel xml:lang="fr">Sceau</skos:altLabel>
       <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
       <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_I"/>
+      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_A"/>
    </skos:concept>
    <skos:concept rdf:about="http://gams.uni-graz.at/o:vis#322">
       <skos:prefLabel xml:lang="fr">émolument du sceau</skos:prefLabel>
@@ -3896,10 +3898,12 @@
       <skos:prefLabel xml:lang="es">Tasa (ou derechos) del sello</skos:prefLabel>
       <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
       <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_III"/>
+      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_A"/>
    </skos:concept>
    <skos:concept rdf:about="http://gams.uni-graz.at/o:vis#323">
       <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
       <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_I"/>
+      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_A"/>
       <skos:narrower rdf:resource="http://gams.uni-graz.at/o:vis#323a"/>
       <skos:narrower rdf:resource="http://gams.uni-graz.at/o:vis#323b"/>
    </skos:concept>
@@ -3918,6 +3922,7 @@
    <skos:concept rdf:about="http://gams.uni-graz.at/o:vis#324">
       <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
       <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_I"/>
+      <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#TOC_A"/>
       <skos:narrower rdf:resource="http://gams.uni-graz.at/o:vis#324a"/>
       <skos:narrower rdf:resource="http://gams.uni-graz.at/o:vis#324b"/>
       <skos:narrower rdf:resource="http://gams.uni-graz.at/o:vis#324c"/>
