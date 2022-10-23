@@ -6,11 +6,16 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://gams.uni-graz.at/o:vis.owl">
         <rdfs:comment xml:lang="en">This is a first attempt to build an ontology in the domain of Sigillography, based on the /Vocabulaire international de la Sigillographie/, ed. by Conseil international des archives, Comité de sigillographie, Roma, Ministero per i beni culturali e ambientali. Ufficio centrale per i beni archivistici, 1990 (Pubblicazioni degli archivi di Stato, Sussidi, 3), available as SKOS resource at http://gams.uni-graz.at/o:vis.
 It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comment>
-        <owl:versionInfo xml:lang="en">This file is a prototype mixing incosistent assertions (Class &apos;_Originalhierarchie&apos;) with a first draft formal models, 2022 May, Georg Vogeler</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">This file is a prototype mixing incosistent assertions (Class &apos;_Originalhierarchie&apos;) with a first draft formal models, 2022 October, Georg Vogeler
+
+ToDo: 
+- [ ] Remove _Originalhierarchie
+- [ ] separate entities from the original terminoloy that combining typology with features and create complex descriptions from them (e.g. &quot;Schiffssiegel = &quot;seal with at least one visual feature in the image depicting a water vessel&quot;)</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -85,6 +90,8 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
     <!-- http://gams.uni-graz.at/o:vis.owl#carries -->
 
     <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#carries">
+        <rdfs:domain rdf:resource="http://erlangen-crm.org/211015/E18_Physical_Thing"/>
+        <rdfs:range rdf:resource="http://erlangen-crm.org/211015/E90_Symbolic_Object"/>
         <rdfs:seeAlso rdf:resource="http://erlangen-crm.org/211015/P128_carries"/>
     </owl:ObjectProperty>
     
@@ -95,6 +102,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
     <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#carries_image">
         <rdfs:subPropertyOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#carries"/>
         <rdfs:domain rdf:resource="http://gams.uni-graz.at/o:vis.owl#3"/>
+        <rdfs:range rdf:resource="http://gams.uni-graz.at/o:vis.owl#VisualFeatures"/>
     </owl:ObjectProperty>
     
 
@@ -104,6 +112,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
     <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#carries_writing">
         <rdfs:subPropertyOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#carries"/>
         <rdfs:domain rdf:resource="http://gams.uni-graz.at/o:vis.owl#3"/>
+        <rdfs:range rdf:resource="http://gams.uni-graz.at/o:vis.owl#196"/>
     </owl:ObjectProperty>
     
 
@@ -130,6 +139,24 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
     <!-- http://gams.uni-graz.at/o:vis.owl#depicts -->
 
     <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#depicts"/>
+    
+
+
+    <!-- http://gams.uni-graz.at/o:vis.owl#describes -->
+
+    <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#describes">
+        <owl:inverseOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#is_described_by"/>
+        <rdfs:domain rdf:resource="http://gams.uni-graz.at/o:vis.owl#314"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#3"/>
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#3a"/>
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#3b"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
     
 
 
@@ -178,6 +205,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://gams.uni-graz.at/o:vis.owl#TOC_VI"/>
+        <rdfs:comment>P56 bears feature</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -219,6 +247,23 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://gams.uni-graz.at/o:vis.owl#314"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://gams.uni-graz.at/o:vis.owl#materializes -->
+
+    <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#materializes">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#TOC_V"/>
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#3a"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://gams.uni-graz.at/o:vis.owl#3"/>
+        <rdfs:comment>frbroo:R7 materializes = E18 Physical Thing. P128 carries (is carried by): E90 Symbolic Object</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -276,27 +321,19 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
     
 
 
-    <!-- http://www.digisig.org/page/term/10000707#manifests -->
-
-    <owl:ObjectProperty rdf:about="http://www.digisig.org/page/term/10000707#manifests">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#TOC_V"/>
-                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#3a"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://gams.uni-graz.at/o:vis.owl#3"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.digisig.org/page/term/10000707#produce_from -->
 
     <owl:ObjectProperty rdf:about="http://www.digisig.org/page/term/10000707#produce_from">
         <rdfs:domain rdf:resource="http://gams.uni-graz.at/o:vis.owl#64"/>
         <rdfs:range rdf:resource="http://gams.uni-graz.at/o:vis.owl#TOC_VI_A"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -324,9 +361,17 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
     
 
 
+    <!-- http://erlangen-crm.org/211015/E18_Physical_Thing -->
+
+    <owl:Class rdf:about="http://erlangen-crm.org/211015/E18_Physical_Thing"/>
+    
+
+
     <!-- http://erlangen-crm.org/211015/E22_Human-Made_Object -->
 
-    <owl:Class rdf:about="http://erlangen-crm.org/211015/E22_Human-Made_Object"/>
+    <owl:Class rdf:about="http://erlangen-crm.org/211015/E22_Human-Made_Object">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E18_Physical_Thing"/>
+    </owl:Class>
     
 
 
@@ -414,7 +459,9 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
 
     <!-- http://erlangen-crm.org/211015/E90_Symbolic_Object -->
 
-    <owl:Class rdf:about="http://erlangen-crm.org/211015/E90_Symbolic_Object"/>
+    <owl:Class rdf:about="http://erlangen-crm.org/211015/E90_Symbolic_Object">
+        <rdfs:seeAlso rdf:resource="http://gams.uni-graz.at/o:vis.owl#TOC_VIII"/>
+    </owl:Class>
     
 
 
@@ -639,6 +686,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
 
     <owl:Class rdf:about="http://gams.uni-graz.at/o:vis.owl#TOC_VIII">
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E28_Conceptual_Object"/>
+        <rdfs:subClassOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#printed"/>
         <rdfs:label xml:lang="fr">PALÉOGRAPHIE DES SCEAUX</rdfs:label>
         <rdfs:label xml:lang="de">Siegelpaläographie</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://gams.uni-graz.at/o:vis#TOC_VIII"/>
@@ -649,6 +697,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
     <!-- http://gams.uni-graz.at/o:vis.owl#TOC_VII_A -->
 
     <owl:Class rdf:about="http://gams.uni-graz.at/o:vis.owl#TOC_VII_A">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E90_Symbolic_Object"/>
         <rdfs:subClassOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#VisualFeatures"/>
         <rdfs:label xml:lang="fr">Parties du sceau</rdfs:label>
         <rdfs:label xml:lang="de">Teile des Siegelbildes</rdfs:label>
@@ -4842,6 +4891,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
 
     <owl:Class rdf:about="http://gams.uni-graz.at/o:vis.owl#30">
         <rdfs:subClassOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#26"/>
+        <rdfs:comment xml:lang="fr">Le sceau du secret ou sceau secret (lat. sigillum secreti, sigillum secretum, signetum secretum, secretum) est un sceau de petite dimension, dont use le détenteur d&apos;une autorité publique pour sceller ses missives ou, plus généralement, les pièces qui le concernent personnellement. Il peut aussi servir de contre-sceau ou être utilisé comme sceau de substitution en cas d&apos;absence du grand sceau.</rdfs:comment>
         <rdfs:label xml:lang="de">Sekretsiegel</rdfs:label>
         <rdfs:label xml:lang="es">Sello secreto</rdfs:label>
         <rdfs:label xml:lang="en">Signet</rdfs:label>
@@ -5172,6 +5222,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
 
     <owl:Class rdf:about="http://gams.uni-graz.at/o:vis.owl#32">
         <rdfs:subClassOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#26"/>
+        <rdfs:comment xml:lang="fr">Le sceau privé (lat. sigillum privatum) est, en principe, l&apos;équivalent du sceau secret; mais en Angleterre, par suite de l&apos;évolution des institutions, il a donné lieu à l&apos;organisation d&apos;un service royal particulier, dit du &quot;Privy Seal&quot;. Il en a été de même en Castille.</rdfs:comment>
         <rdfs:label xml:lang="en">Privy seal</rdfs:label>
         <rdfs:label xml:lang="es">Sello privado</rdfs:label>
         <rdfs:label xml:lang="fr">sceau privé</rdfs:label>
@@ -5315,6 +5366,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
 
     <owl:Class rdf:about="http://gams.uni-graz.at/o:vis.owl#35">
         <rdfs:subClassOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#26"/>
+        <rdfs:comment xml:lang="fr">Un sceau de régence est le sceau dont usaient les régents du royaume pour sceller les actes royaux commandés par eux lorsque le roi absent (et notamment parti à la croisade) avait emporté le grand sceau pour sceller ses propres actes.</rdfs:comment>
         <rdfs:label xml:lang="de">Regentschaftssiegel</rdfs:label>
         <rdfs:label xml:lang="en">Seal of regency</rdfs:label>
         <rdfs:label xml:lang="es">Sello de regencia</rdfs:label>
@@ -5366,6 +5418,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
 
     <owl:Class rdf:about="http://gams.uni-graz.at/o:vis.owl#39">
         <rdfs:subClassOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#26"/>
+        <rdfs:comment xml:lang="fr">Un sceau de juridiction est le sceau dont usait une autorité, laïque ou ecclésiastique, dans l&apos;exercice de ses attributions judiciaires, contentieuses ou gracieuses.</rdfs:comment>
         <rdfs:label xml:lang="de">Gerichtssiegel</rdfs:label>
         <rdfs:label xml:lang="en">Seal ad causas</rdfs:label>
         <rdfs:label xml:lang="es">Sello de jurisdicción</rdfs:label>
@@ -5403,6 +5456,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
 
     <owl:Class rdf:about="http://gams.uni-graz.at/o:vis.owl#40">
         <rdfs:subClassOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#26"/>
+        <rdfs:comment xml:lang="fr">Un sceau rigoureux est le sceau dont usaient certaines cours pour valider des contrats, spécialement en matière commerciale, dont la nonexécution entraînait l&apos;application d&apos;une procédure rapide et sans appel, la cour agissant, summarie et de plano. Tels le &quot;sceau des foires de Champagne&quot;, de la &quot;Cour du petit scel de Montpellier&quot;, etc.</rdfs:comment>
         <rdfs:label xml:lang="es">Sello riguroso</rdfs:label>
         <rdfs:label xml:lang="fr">sceau rigoureux</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://gams.uni-graz.at/o:vis#40"/>
@@ -5608,6 +5662,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
 
     <owl:Class rdf:about="http://gams.uni-graz.at/o:vis.owl#51">
         <rdfs:subClassOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#45"/>
+        <rdfs:comment xml:lang="fr">Un sceau authentique (lat. sigillum authenticum) est celui qui fait autorité devant toute juridiction en cas de contestation, soit parce qu&apos;il est celui d&apos;une autorité publique ou d&apos;une personne physique ou morale bene famosa, soit parce que son authenticité a été affirmée par une autorité publique.</rdfs:comment>
         <rdfs:label xml:lang="de">Authentisches Siegel</rdfs:label>
         <rdfs:label xml:lang="en">Seal of authentication</rdfs:label>
         <rdfs:label xml:lang="es">Sello auténtico</rdfs:label>
@@ -5634,6 +5689,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
 
     <owl:Class rdf:about="http://gams.uni-graz.at/o:vis.owl#53">
         <rdfs:subClassOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#45"/>
+        <rdfs:comment xml:lang="fr">Un sceau de confortation est un sceau apposé à un document par une autorité ou une personne notable (sigillum magis authenticum) pour confirmer (ad maiorem firmitatem) l&apos;authenticité du sceau apposé par une personne moins notable (minus famosa).</rdfs:comment>
         <rdfs:label xml:lang="en">Seal of corroboration</rdfs:label>
         <rdfs:label xml:lang="fr">sceau de confortation</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://gams.uni-graz.at/o:vis#53"/>
@@ -5645,6 +5701,7 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
 
     <owl:Class rdf:about="http://gams.uni-graz.at/o:vis.owl#54">
         <rdfs:subClassOf rdf:resource="http://gams.uni-graz.at/o:vis.owl#45"/>
+        <rdfs:comment xml:lang="fr">Un sceau d&apos;attestation est un signet ou un petit sceau apposé au bas d&apos;une pièce, ou sur son repli ou encore sur les extrémités des attaches d&apos;un sceau.</rdfs:comment>
         <rdfs:label xml:lang="en">Seal of corroboration</rdfs:label>
         <rdfs:label xml:lang="fr">sceau d&apos;attestation</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://gams.uni-graz.at/o:vis#54"/>
@@ -6495,12 +6552,117 @@ It aims at creating a CIDOC-CRM compliant consistent OWL description.</rdfs:comm
     
 
 
+    <!-- http://gams.uni-graz.at/o:vis.owl#attach10296092to10273250 -->
+
+    <owl:NamedIndividual rdf:about="http://gams.uni-graz.at/o:vis.owl#attach10296092to10273250">
+        <attaching_of rdf:resource="http://www.digisig.org/page/manifestation/10296092"/>
+        <attaching_to rdf:resource="http://www.digisig.org/page/item/10273250"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.digisig.org/entity/10049803 -->
+
+    <owl:NamedIndividual rdf:about="http://www.digisig.org/entity/10049803">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#314"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.digisig.org/page/item/10273250 -->
+
+    <owl:NamedIndividual rdf:about="http://www.digisig.org/page/item/10273250">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#Document"/>
+        <owl:sameAs rdf:resource="https://discovery.nationalarchives.gov.uk/details/r/C5685409"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.digisig.org/page/manifestation/10296092 -->
+
+    <owl:NamedIndividual rdf:about="http://www.digisig.org/page/manifestation/10296092">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#3a"/>
+        <materializes rdf:resource="http://www.digisig.org/page/seal/10247801"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.digisig.org/page/place/50013257 -->
+
+    <owl:NamedIndividual rdf:about="http://www.digisig.org/page/place/50013257">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#9"/>
+        <skos:closeMatch rdf:resource="http://www.sigilla.org/sigillant/abbaye-sainte-trinite-lessay-198661"/>
+        <rdfs:label xml:lang="fr">Abbaye Saint-Trinité de Lessay</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.digisig.org/page/seal/10247801 -->
+
+    <owl:NamedIndividual rdf:about="http://www.digisig.org/page/seal/10247801">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#3"/>
+        <represents rdf:resource="http://www.digisig.org/page/place/50013257"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.digisig.org/page/term/10000707 -->
 
     <owl:NamedIndividual rdf:about="http://www.digisig.org/page/term/10000707">
         <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#223"/>
         <rdfs:label xml:lang="en">Boat</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sigilla.org/Seal_abbaye-sainte-trinite-lessay-198661 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sigilla.org/Seal_abbaye-sainte-trinite-lessay-198661">
+        <represents rdf:resource="http://www.sigilla.org/sigillant/abbaye-sainte-trinite-lessay-198661"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sigilla.org/attach221365to215494 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sigilla.org/attach221365to215494">
+        <attaching_of rdf:resource="http://www.sigilla.org/empreinte/abbaye-sainte-trinite-lessay-an-paris-j-345-ndeg-109-bis-221365"/>
+        <attaching_to rdf:resource="http://www.sigilla.org/acte/an-paris-j-345-ndeg-109-bis-215494"/>
+        <rdfs:label>attach221365to215494</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sigilla.org/acte/an-paris-j-345-ndeg-109-bis-215494 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sigilla.org/acte/an-paris-j-345-ndeg-109-bis-215494">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#Document"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sigilla.org/empreinte/abbaye-sainte-trinite-lessay-an-paris-j-345-ndeg-109-bis-221365 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sigilla.org/empreinte/abbaye-sainte-trinite-lessay-an-paris-j-345-ndeg-109-bis-221365">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#3a"/>
+        <represents rdf:resource="http://www.sigilla.org/sigillant/abbaye-sainte-trinite-lessay-198661"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sigilla.org/sigillant/abbaye-sainte-trinite-lessay-198661 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sigilla.org/sigillant/abbaye-sainte-trinite-lessay-198661">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#9"/>
+        <skos:closeMatch rdf:resource="http://www.digisig.org/page/place/50013257"/>
+        <rdfs:label xml:lang="fr">Abbaye da la Saint-Trinité de Lessay</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://discovery.nationalarchives.gov.uk/details/r/C5685409 -->
+
+    <owl:NamedIndividual rdf:about="https://discovery.nationalarchives.gov.uk/details/r/C5685409"/>
 </rdf:RDF>
 
 
