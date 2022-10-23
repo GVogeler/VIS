@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://gams.uni-graz.at/o:vis.instances#"
+     xml:base="http://gams.uni-graz.at/o:vis.instances"
+     xmlns:ns0="http://gams.uni-graz.at/o:vis.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://gams.uni-graz.at/o:vis.instances">
+        <rdfs:comment xml:lang="en">Sample instances for vis-crm</rdfs:comment>
+        <owl:versionInfo xml:lang="en">2022 October, Georg Vogeler</owl:versionInfo>
+    </owl:Ontology>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+    
+    
+    
+    <!-- http://gams.uni-graz.at/o:vis.owl#StadtiegelLübeck -->
+    
+    <owl:NamedIndividual rdf:about="http://gams.uni-graz.at/o:vis.owl#StadtiegelLübeck">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#223"/>
+        <depicts rdf:resource="http://www.digisig.org/page/term/10000707"/>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://gams.uni-graz.at/o:vis.owl#attach10296092to10273250 -->
+    
+    <owl:NamedIndividual rdf:about="http://gams.uni-graz.at/o:vis.owl#attach10296092to10273250">
+        <attaching_of rdf:resource="http://www.digisig.org/page/manifestation/10296092"/>
+        <attaching_to rdf:resource="http://www.digisig.org/page/item/10273250"/>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://www.digisig.org/entity/10049803 -->
+    
+    <owl:NamedIndividual rdf:about="http://www.digisig.org/entity/10049803">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#314"/>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://www.digisig.org/page/item/10273250 -->
+    
+    <owl:NamedIndividual rdf:about="http://www.digisig.org/page/item/10273250">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#Document"/>
+        <owl:sameAs rdf:resource="https://discovery.nationalarchives.gov.uk/details/r/C5685409"/>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://www.digisig.org/page/manifestation/10296092 -->
+    
+    <owl:NamedIndividual rdf:about="http://www.digisig.org/page/manifestation/10296092">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#3a"/>
+        <materializes rdf:resource="http://www.digisig.org/page/seal/10247801"/>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://www.digisig.org/page/place/50013257 -->
+    
+    <owl:NamedIndividual rdf:about="http://www.digisig.org/page/place/50013257">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#9"/>
+        <skos:closeMatch rdf:resource="http://www.sigilla.org/sigillant/abbaye-sainte-trinite-lessay-198661"/>
+        <rdfs:label xml:lang="fr">Abbaye Saint-Trinité de Lessay</rdfs:label>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://www.digisig.org/page/seal/10247801 -->
+    
+    <owl:NamedIndividual rdf:about="http://www.digisig.org/page/seal/10247801">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#3"/>
+        <represents rdf:resource="http://www.digisig.org/page/place/50013257"/>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://www.digisig.org/page/term/10000707 -->
+    
+    <owl:NamedIndividual rdf:about="http://www.digisig.org/page/term/10000707">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#223"/>
+        <rdfs:label xml:lang="en">Boat</rdfs:label>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://www.sigilla.org/Seal_abbaye-sainte-trinite-lessay-198661 -->
+    
+    <owl:NamedIndividual rdf:about="http://www.sigilla.org/Seal_abbaye-sainte-trinite-lessay-198661">
+        <represents rdf:resource="http://www.sigilla.org/sigillant/abbaye-sainte-trinite-lessay-198661"/>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://www.sigilla.org/attach221365to215494 -->
+    
+    <owl:NamedIndividual rdf:about="http://www.sigilla.org/attach221365to215494">
+        <attaching_of rdf:resource="http://www.sigilla.org/empreinte/abbaye-sainte-trinite-lessay-an-paris-j-345-ndeg-109-bis-221365"/>
+        <attaching_to rdf:resource="http://www.sigilla.org/acte/an-paris-j-345-ndeg-109-bis-215494"/>
+        <rdfs:label>attach221365to215494</rdfs:label>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://www.sigilla.org/acte/an-paris-j-345-ndeg-109-bis-215494 -->
+    
+    <owl:NamedIndividual rdf:about="http://www.sigilla.org/acte/an-paris-j-345-ndeg-109-bis-215494">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#Document"/>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://www.sigilla.org/empreinte/abbaye-sainte-trinite-lessay-an-paris-j-345-ndeg-109-bis-221365 -->
+    
+    <owl:NamedIndividual rdf:about="http://www.sigilla.org/empreinte/abbaye-sainte-trinite-lessay-an-paris-j-345-ndeg-109-bis-221365">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#3a"/>
+        <represents rdf:resource="http://www.sigilla.org/sigillant/abbaye-sainte-trinite-lessay-198661"/>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://www.sigilla.org/sigillant/abbaye-sainte-trinite-lessay-198661 -->
+    
+    <owl:NamedIndividual rdf:about="http://www.sigilla.org/sigillant/abbaye-sainte-trinite-lessay-198661">
+        <rdf:type rdf:resource="http://gams.uni-graz.at/o:vis.owl#9"/>
+        <skos:closeMatch rdf:resource="http://www.digisig.org/page/place/50013257"/>
+        <rdfs:label xml:lang="fr">Abbaye da la Saint-Trinité de Lessay</rdfs:label>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- https://discovery.nationalarchives.gov.uk/details/r/C5685409 -->
+    
+    <owl:NamedIndividual rdf:about="https://discovery.nationalarchives.gov.uk/details/r/C5685409"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
