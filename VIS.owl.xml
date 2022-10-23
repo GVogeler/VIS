@@ -31,6 +31,42 @@ ToDo:
     
 
 
+    <!-- http://erlangen-crm.org/211015/P111_added -->
+
+    <owl:ObjectProperty rdf:about="http://erlangen-crm.org/211015/P111_added"/>
+    
+
+
+    <!-- http://erlangen-crm.org/211015/P128_carries -->
+
+    <owl:ObjectProperty rdf:about="http://erlangen-crm.org/211015/P128_carries"/>
+    
+
+
+    <!-- http://erlangen-crm.org/211015/P21_had_general_purpose -->
+
+    <owl:ObjectProperty rdf:about="http://erlangen-crm.org/211015/P21_had_general_purpose"/>
+    
+
+
+    <!-- http://erlangen-crm.org/211015/P56_bears_feature -->
+
+    <owl:ObjectProperty rdf:about="http://erlangen-crm.org/211015/P56_bears_feature"/>
+    
+
+
+    <!-- http://erlangen-crm.org/211015/P62_depicts -->
+
+    <owl:ObjectProperty rdf:about="http://erlangen-crm.org/211015/P62_depicts"/>
+    
+
+
+    <!-- http://erlangen-crm.org/211015/P67_refers_to -->
+
+    <owl:ObjectProperty rdf:about="http://erlangen-crm.org/211015/P67_refers_to"/>
+    
+
+
     <!-- http://gams.uni-graz.at/o:vis.owl#assigned -->
 
     <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#assigned">
@@ -42,6 +78,7 @@ ToDo:
     <!-- http://gams.uni-graz.at/o:vis.owl#attaching_of -->
 
     <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#attaching_of">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/211015/P111_added"/>
         <rdfs:domain rdf:resource="http://gams.uni-graz.at/o:vis.owl#62"/>
         <rdfs:range>
             <owl:Class>
@@ -90,6 +127,7 @@ ToDo:
     <!-- http://gams.uni-graz.at/o:vis.owl#carries -->
 
     <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#carries">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/211015/P128_carries"/>
         <rdfs:domain rdf:resource="http://erlangen-crm.org/211015/E18_Physical_Thing"/>
         <rdfs:range rdf:resource="http://erlangen-crm.org/211015/E90_Symbolic_Object"/>
         <rdfs:seeAlso rdf:resource="http://erlangen-crm.org/211015/P128_carries"/>
@@ -136,9 +174,39 @@ ToDo:
     
 
 
+    <!-- http://gams.uni-graz.at/o:vis.owl#copies_from -->
+
+    <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#copies_from">
+        <rdfs:domain rdf:resource="http://gams.uni-graz.at/o:vis.owl#20b"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#TOC_V"/>
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#22"/>
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#3a"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://gams.uni-graz.at/o:vis.owl#depicts -->
 
-    <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#depicts"/>
+    <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#depicts">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/211015/P62_depicts"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#20b"/>
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#3"/>
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#3a"/>
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#3b"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://gams.uni-graz.at/o:vis.owl#VisualFeatures"/>
+    </owl:ObjectProperty>
     
 
 
@@ -169,7 +237,7 @@ ToDo:
     <!-- http://gams.uni-graz.at/o:vis.owl#had_general_purpose -->
 
     <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#had_general_purpose">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/211015/P21_had_general_purpose"/>
         <rdfs:seeAlso rdf:resource="http://erlangen-crm.org/211015/P21_had_general_purpose"/>
     </owl:ObjectProperty>
     
@@ -196,6 +264,7 @@ ToDo:
     <!-- http://gams.uni-graz.at/o:vis.owl#has_physical_feature -->
 
     <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#has_physical_feature">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/211015/P56_bears_feature"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -258,6 +327,7 @@ ToDo:
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#TOC_V"/>
+                    <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#22"/>
                     <rdf:Description rdf:about="http://gams.uni-graz.at/o:vis.owl#3a"/>
                 </owl:unionOf>
             </owl:Class>
@@ -280,6 +350,7 @@ ToDo:
     <!-- http://gams.uni-graz.at/o:vis.owl#refers_to -->
 
     <owl:ObjectProperty rdf:about="http://gams.uni-graz.at/o:vis.owl#refers_to">
+        <rdfs:subPropertyOf rdf:resource="http://erlangen-crm.org/211015/P67_refers_to"/>
         <rdfs:seeAlso rdf:resource="http://erlangen-crm.org/211015/P67_refers_to"/>
     </owl:ObjectProperty>
     
