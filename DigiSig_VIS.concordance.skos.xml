@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  
+  <skos:Concept rdf:about="http://www.digisig.org/entity/10000717"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#212"/><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#214"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10000757"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#216"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001147"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#211"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10000907"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#178"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001137"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#227"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001287"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#3"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001427"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#74"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001787"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#178d"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001477"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#175"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001907"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#121"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001317"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#7"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001367"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#21"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001307"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#8"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001987"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#154"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001557"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#157"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001507"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#313"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001537"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#9"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001657"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#178"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001337"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#316"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001407"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#182"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001717"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#178a"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001857"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#123"/></skos:Concept>
+<skos:Concept rdf:about="http://www.digisig.org/entity/10001327"><skos:closeMatch rdf:resource="https://gams.uni-graz.at/o:vis#20"/></skos:Concept>
+  
+</rdf:RDF>
