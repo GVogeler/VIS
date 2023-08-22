@@ -2892,8 +2892,8 @@
     <skos:prefLabel xml:lang="en">Drop-shaped seal</skos:prefLabel>
     <skos:prefLabel xml:lang="es">Pavés</skos:prefLabel>
     <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#178"/>
-    <skos:defintion xml:lang="fr">Un sceau en écu ou sceau scutiforme en forme d'écu allongé, à la
-      partie inférieure arrondie.</skos:defintion>
+    <skos:definition xml:lang="fr">Un sceau en écu ou sceau scutiforme en forme d'écu allongé, à la
+      partie inférieure arrondie.</skos:definition>
   <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#178a"/></skos:Concept>
   <skos:Concept rdf:about="http://gams.uni-graz.at/o:vis#178b">
     <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
@@ -2902,8 +2902,8 @@
     <skos:prefLabel xml:lang="en">Shield</skos:prefLabel>
     <skos:prefLabel xml:lang="es">Tarja</skos:prefLabel>
     <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#178"/>
-    <skos:defintion xml:lang="fr">Un sceau en écu ou sceau scutiforme en forme d'écu échancre sur un
-      côté.</skos:defintion>
+    <skos:definition xml:lang="fr">Un sceau en écu ou sceau scutiforme en forme d'écu échancre sur un
+      côté.</skos:definition>
   <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#178b"/></skos:Concept>
   <skos:Concept rdf:about="http://gams.uni-graz.at/o:vis#178c">
     <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
@@ -2912,7 +2912,7 @@
     <skos:prefLabel xml:lang="en">Shield with rounded upper corners</skos:prefLabel>
     <skos:prefLabel xml:lang="es">Escudo de angulos superiores redondeados</skos:prefLabel>
     <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#178"/>
-    <skos:defintion xml:lang="fr">Le sceau en écu aux angles supérieurs arrondis.</skos:defintion>
+    <skos:definition xml:lang="fr">Le sceau en écu aux angles supérieurs arrondis.</skos:definition>
   <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#178c"/></skos:Concept>
   <skos:Concept rdf:about="http://gams.uni-graz.at/o:vis#178d">
     <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
@@ -2921,8 +2921,8 @@
     <skos:prefLabel xml:lang="en">Kite-shaped seal</skos:prefLabel>
     <skos:prefLabel xml:lang="es">Escudo en peonza</skos:prefLabel>
     <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#178"/>
-    <skos:defintion xml:lang="fr">Une sceau en forme toupie, dont la partie supérieure est renflée
-      et la partie inférieure pointue.</skos:defintion>
+    <skos:definition xml:lang="fr">Une sceau en forme toupie, dont la partie supérieure est renflée
+      et la partie inférieure pointue.</skos:definition>
   <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#178d"/></skos:Concept>
   <skos:Concept rdf:about="http://gams.uni-graz.at/o:vis#178e">
     <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
@@ -2932,8 +2932,8 @@
     <skos:altLabel xml:lang="en">Drop-shaped seal</skos:altLabel>
     <skos:prefLabel xml:lang="es">Escudo piriforme</skos:prefLabel>
     <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#178"/>
-    <skos:defintion xml:lang="fr">Une sceau piriforme, dont la partie supérieure est pointue et la
-      partie inférieure renflée: en forme de poire.</skos:defintion>
+    <skos:definition xml:lang="fr">Une sceau piriforme, dont la partie supérieure est pointue et la
+      partie inférieure renflée: en forme de poire.</skos:definition>
   <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#178e"/></skos:Concept>
   <skos:Concept rdf:about="http://gams.uni-graz.at/o:vis#178f">
     <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
@@ -2942,8 +2942,8 @@
     <skos:prefLabel xml:lang="en">Triangular seal</skos:prefLabel>
     <skos:prefLabel xml:lang="es">Escudo triangular</skos:prefLabel>
     <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#178"/>
-    <skos:defintion xml:lang="fr">Une sceau en triangle isocèle, en triangle curviligne ... ).(pl.
-      XII a)</skos:defintion>
+    <skos:definition xml:lang="fr">Une sceau en triangle isocèle, en triangle curviligne ... ).(pl.
+      XII a)</skos:definition>
   <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#178f"/></skos:Concept>
   <skos:Concept rdf:about="http://gams.uni-graz.at/o:vis#179">
     <skos:prefLabel xml:lang="fr">sceau en navette</skos:prefLabel>
@@ -3130,9 +3130,9 @@ en octogone, en dodécagone, plus rarement carré ou rectangulaire) sert princip
     <skos:prefLabel xml:lang="es">Tipo</skos:prefLabel>
     <skos:altLabel xml:lang="es">grabado</skos:altLabel>
     <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#193"/>
-    <skos:defintion xml:lang="fr">Le type d'un sceau est l'ensemble des éléments gravés sur la
+    <skos:definition xml:lang="fr">Le type d'un sceau est l'ensemble des éléments gravés sur la
       matrice et empreints sur le sceau (de là, le latin typarium qui désigne la matrice elle-même,
-      laquelle comporte le "type" destiné à être empreint).</skos:defintion>
+      laquelle comporte le "type" destiné à être empreint).</skos:definition>
   <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#193a"/></skos:Concept>
   <skos:Concept rdf:about="http://gams.uni-graz.at/o:vis#193b">
     <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
@@ -3140,18 +3140,18 @@ en octogone, en dodécagone, plus rarement carré ou rectangulaire) sert princip
     <skos:altLabel xml:lang="de">Bild</skos:altLabel>
     <skos:prefLabel xml:lang="es">Tipo</skos:prefLabel>
     <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#193"/>
-    <skos:defintion xml:lang="fr">Le type d'un sceau est par extension, l'image qui confère au sceau
-      son caractère essentiel.</skos:defintion>
+    <skos:definition xml:lang="fr">Le type d'un sceau est par extension, l'image qui confère au sceau
+      son caractère essentiel.</skos:definition>
   <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#193b"/></skos:Concept>
   <skos:Concept rdf:about="http://gams.uni-graz.at/o:vis#193c">
     <skos:inScheme rdf:resource="http://gams.uni-graz.at/o:vis"/>
     <skos:prefLabel xml:lang="de">Siegeltyp</skos:prefLabel>
     <skos:prefLabel xml:lang="es">Tipo</skos:prefLabel>
     <skos:broader rdf:resource="http://gams.uni-graz.at/o:vis#193"/>
-    <skos:defintion xml:lang="fr">Le type d'un sceau est la catégorie à laquelle ressortit l'image
+    <skos:definition xml:lang="fr">Le type d'un sceau est la catégorie à laquelle ressortit l'image
       qui est figurée sur le sceau et qui permet de le caractériser. On dit clone type équestre,
       type monumental, type de majesté, etc. (voir aussi: VII. B. La typologie des sceaux).
-    </skos:defintion>
+    </skos:definition>
   <owl:sameAs rdf:resource="http://gams.uni-graz.at/skos/scheme/o:vis/#193c"/></skos:Concept>
   <skos:Concept rdf:about="http://gams.uni-graz.at/o:vis#194">
     <skos:prefLabel xml:lang="fr">exergue</skos:prefLabel>
